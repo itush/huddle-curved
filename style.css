@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    :root{
+--Pink: hsl(322, 100%, 66%);
+--LightPink: hsl(321, 100%, 78%);
+--LightRed: hsl(0, 100%, 63%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--VeryPaleBlue: hsl(207, 100%, 98%);
+    
+    }
+    
+    body{
+    font-family: 'Open Sans', sans-serif;        
+    }    
+    .top{
+        width: 90%;
+        margin: 74px 62px 0px 62px;
+    }
+    .topheader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+
+    #tryitfreebtn{
+        width: 140px;
+        color: var(--Pink);
+        border: 1px solid var(--Pink);
+        background: white;
+        padding: 1em;
+        border-radius: 35px;
+        outline: none;
+    }
+
+    .top h1{
+        text-align: center;
+        margin: 252px 0px 0px 0px;
+        color: var(--VeryDarkCyan);
+        font-size: xx-large;
+    }
+    #toppara{
+        text-align: center;
+        padding: 1em 22.5em;
+        color: var(--VeryDarkCyan);
+        
+    }
+    #startedforfreebtn, #m4btn{
+        display: block;
+        width: 336px;
+        color: white;
+        border: none;
+        background: var(--Pink);
+        padding: 1em;
+        border-radius: 35px;
+        outline: none;
+        font-size: 20px;
+        margin: 48px auto;
+        font-weight: 700;
+    }
+
+    #screenmockups{
+        display: block;
+        max-width: 50%;
+        margin: 0px auto;       
+    }
+    .stats{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 124px 0px;
+    }
+    .stats h2{
+        font-size: 74px;
+        color: var(--VeryDarkCyan);
+    }
+
+    .stats p{
+        text-align: center;
+        color: var(--VeryDarkCyan);
+    }
+
+    .middle1, .middle3{
+        background-image: url('./images/bg-section-top-desktop-1.svg'), url('./images/bg-section-top-desktop-2.svg'), url('./images/bg-section-bottom-desktop-1.svg'), url('./images/bg-section-bottom-desktop-2.svg');
+        background-position: left top, right top, left bottom,right bottom;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 100% 50%;         
+        padding: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .m1left h2, .m2right h2, .m3left h2{
+        color: var(--VeryDarkCyan);
+        font-size: 34px;
+    }
+    .m1left p, .m2right p, .m3left p{
+        color: var(--VeryDarkCyan);
+        margin: 34px 0px;
+    }
+    .m1right{
+        padding: 5em 0em 5em 20em ;
+    }
+    .m1right img, .m2left img{
+        max-width: 100%;
+    }
+    .middle2{
+        display: flex;
+        padding: 5em;       
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .m2right{
+        padding: 0em 0em 0em 20em;
+    }
+    .m3right img{
+        max-width: 90%;
+        display: block;
+        padding: 5em;
+        margin: 0em 0em 0em 10em;       
+    }
+    .middle4{
+        background-image: url('./images/bg-footer-top-desktop.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding: 5em 0em 20em 0em;
+    }
+    .middle4 h2{
+        color: var(--VeryDarkCyan);
+        text-align: center;
+        font-size: 48px;
+    }
+    .bottom{
+        display: flex;
+       background: var(--VeryDarkCyan);
+        color: white;
+        padding: 10em;
+    }
+    .btmleft p{
+        padding: 1em 0em;
+    }
+    #phoneicon, #emailicon{
+        padding: 0em 1em 0em 0em;
+    }
+   .fab{
+       font-size: 36px;
+       padding: 0em 1em 0em 0em;
+   }    
+
+   .btmright{
+    margin: 0em 0em 0em 20em;
+     
+   }
+
+   .btmright h2{
+       text-transform: uppercase;
+   }
+   .btmright p{
+       padding: 1.5em 0em;
+   }
+   #nwsinput{
+       padding: .8em 3em;
+       border-radius: 5px;
+       border: none;
+       outline: none;
+   }
+   #subscribe{
+       background: var(--Pink);
+       color: white;
+       padding: .5em 1em;
+       border: none;
+       outline: none;
+       border-radius: 5px;
+       font-weight: 700;
+       font-size: 18px;
+       margin: 0em 0em 0em 1em;
+
+   }
+     
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 600px) {}
