@@ -18,6 +18,8 @@
     body{
     font-family: 'Open Sans', sans-serif;        
     }    
+   
+    
     .top{
         width: 90%;
         margin: 74px 62px 0px 62px;
@@ -36,6 +38,12 @@
         padding: 1em;
         border-radius: 35px;
         outline: none;
+    }
+
+    #tryitfreebtn:hover{
+    cursor: pointer;    
+    font-weight: 700;
+    box-shadow: 5px 5px 5px lightpink;
     }
 
     .top h1{
@@ -63,7 +71,11 @@
         margin: 48px auto;
         font-weight: 700;
     }
-
+    #startedforfreebtn:hover, #m4btn:hover{
+        cursor: pointer
+        ;
+        opacity: .5;
+    }
     #screenmockups{
         display: block;
         max-width: 50%;
@@ -85,16 +97,67 @@
         color: var(--VeryDarkCyan);
     }
 
-    .middle1, .middle3{
-        background-image: url('./images/bg-section-top-desktop-1.svg'), url('./images/bg-section-top-desktop-2.svg'), url('./images/bg-section-bottom-desktop-1.svg'), url('./images/bg-section-bottom-desktop-2.svg');
-        background-position: left top, right top, left bottom,right bottom;
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-        background-size: 100% 50%;         
+    .middle1, .middle3{        
         padding: 5em;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        background: var(--VeryPaleBlue);
+        width: 90%;
+        margin: 0px auto ;
+        
     }
+
+    .middle1::before{
+        content: "";
+        position: absolute;        
+        margin: -55% 0% 0% -6%;          
+        width: 100%;
+        height: 30%;
+        background-image: url('./images/bg-section-top-desktop-1.svg');
+        background-repeat: no-repeat;
+        
+    }
+    .middle1::after{
+        content: "";
+        background-image: url('./images/bg-section-bottom-desktop-1.svg');
+        position: absolute;    
+        background-repeat: no-repeat;    
+        margin: 0% 0% -55% -6.8%;
+        width: 100%;
+        height: 30%;
+    }
+
+    .middle3::before{
+        content: "";
+        position: absolute;        
+        margin: -55% 0% 0% -6%;          
+        width: 100%;
+        height: 30%;
+        background-image: url('./images/bg-section-top-desktop-2.svg');
+        background-repeat: no-repeat;
+    }
+
+    .middle3::after{
+        content: "";
+        background-image: url('./images/bg-section-bottom-desktop-2.svg');
+        position: absolute;    
+        background-repeat: no-repeat;    
+        margin: 0% 0% -60% -6.8%;
+        width: 100%;
+        height: 30%;
+    }
+    .bottom::before{        
+        content: "";
+        position: absolute;        
+        margin: -23% 0% 0% -11.9%;          
+        width: 90%;
+        height: 40%;
+        background-image: url('./images/bg-footer-top-desktop.svg');
+        background-repeat: no-repeat;
+        }
+    
     .m1left h2, .m2right h2, .m3left h2{
         color: var(--VeryDarkCyan);
         font-size: 34px;
@@ -114,6 +177,8 @@
         padding: 5em;       
         align-items: center;
         justify-content: space-between;
+        margin: 196px auto;
+        width: 90%;
     }
     
     .m2right{
@@ -125,11 +190,10 @@
         padding: 5em;
         margin: 0em 0em 0em 10em;       
     }
-    .middle4{
-        background-image: url('./images/bg-footer-top-desktop.svg');
+    .middle4{       
         background-position: bottom;
         background-repeat: no-repeat;
-        padding: 5em 0em 20em 0em;
+        padding: 20em 0em;
     }
     .middle4 h2{
         color: var(--VeryDarkCyan);
@@ -141,6 +205,8 @@
        background: var(--VeryDarkCyan);
         color: white;
         padding: 10em;
+        width: 90%;
+        margin: 0px 62px
     }
     .btmleft p{
         padding: 1em 0em;
@@ -152,9 +218,13 @@
        font-size: 36px;
        padding: 0em 1em 0em 0em;
    }    
+   .fab:hover{
+       cursor: pointer;
+       color: cyan;
+   }
 
    .btmright{
-    margin: 0em 0em 0em 20em;
+    margin: 0em 0em 0em 15em;
      
    }
 
@@ -164,11 +234,11 @@
    .btmright p{
        padding: 1.5em 0em;
    }
-   #nwsinput{
+   #email{
        padding: .8em 3em;
        border-radius: 5px;
        border: none;
-       outline: none;
+       outline: none;      
    }
    #subscribe{
        background: var(--Pink);
@@ -179,10 +249,177 @@
        border-radius: 5px;
        font-weight: 700;
        font-size: 18px;
-       margin: 0em 0em 0em 1em;
+       margin: 0em -2em 0em 1em;
+   }
+
+   #subscribe:hover{
+       cursor: pointer;
+       opacity: .5;
 
    }
      
         .attribution { font-size: 11px; text-align: center; }
         .attribution a { color: hsl(228, 45%, 44%); }
-    @media screen and (max-width: 600px) {}
+
+    @media screen and (max-width: 600px) {
+        #hlogo{
+            max-width: 30%;
+        }
+
+        .top{
+            margin: 74px auto 0px auto;
+        }
+
+        #tryitfreebtn{
+            width: 96px;
+            padding: .5em;
+        border-radius: 15px;}
+
+        #toppara{           
+            padding: 1em;}
+        #screenmockups{           
+            max-width: 80%;}
+
+        .stats{
+            flex-direction: column;
+        }
+
+        .rightstat{
+            margin: 10em 0em 0em 0em;
+        }
+
+        .middle1, .middle3{           
+            flex-direction: column-reverse;
+            padding: 0;        
+        }
+        .middle2{
+            flex-direction: column;
+            padding: 0;
+            margin: 10em 0em;
+        }
+        .m1left h2, .m2right h2, .m3left h2{
+            text-align: center;
+            margin: 2em 0em 1em 0em;
+            font-size: 18px;
+            
+        }
+        .m1left p, .m2right p, .m3left p{
+            text-align: center;
+            margin: 1em ;            
+        }
+
+        .m1right{
+            padding: 2em 5em ;
+        }
+        .m2right{
+            padding: 0em;
+        }
+        .m2left{
+            padding: 1em;
+            margin: 0% auto;
+        }
+        .m3right img{
+            max-width: 100%;     
+            margin: 0;   
+            padding: 1em;            
+        }
+
+        .middle4{                
+            width: 80%;  
+            margin: 0 auto;
+        }
+
+        .middle4 h2{font-size: 18px;}
+
+        .bottom{
+            flex-direction: column-reverse;
+            padding: 2em;
+            width: 74.2%;
+            margin: 0 auto;
+        }
+        .btmright{
+            margin: 0;
+        }
+        #email{
+            width: 100%;
+        }
+        #subscribe{
+            width: 50%;
+            margin: 5% 0% 0% 50%;
+        }
+        .middle1::before{           
+           content: none;
+        }
+        .middle1::after{  
+            content: none;
+         }
+         .middle3::before{
+             content: none;
+         }
+         .middle3::after{
+             content: none;
+         }
+         .bottom::before{    
+            content: none;
+         }
+         .stats::after{
+             content: '';
+             background-image: url('./images/bg-section-top-mobile-1.svg');
+             background-repeat: no-repeat;
+             width: 90%;
+             height: 30%;
+             position: absolute;
+             margin: 0% 0% -180% 0%;
+         }
+         .middle2::before{
+            content: '';
+            background-image: url('./images/bg-section-bottom-mobile-1.svg');
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 30%;
+            position: absolute;           
+            margin: -42% 0% 0% 10%;
+         }
+
+         .middle2::after{
+            content: '';
+            background-image: url('./images/bg-section-top-mobile-2.svg');
+            background-repeat: no-repeat;
+            width: 88%;
+            height: 30%;
+            position: absolute;
+            margin: 130% 0% 0% 9%;        
+            }
+        
+        .middle4::before{
+            content: '';
+            background-image: url('./images/bg-section-bottom-mobile-2.svg');
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 30%;
+            position: absolute;
+            margin: -42% 0% 0% -5%;
+        }
+
+        .middle4::after{
+            content: '';
+            background-image: url('./images/bg-footer-top-mobile.svg');
+            background-repeat: no-repeat;
+            width: 75%;
+            height: 30%;
+            position: absolute;
+            margin: 30% 0% 0% 2.5%;        
+        }
+
+        #startedforfreebtn{
+            width: 70%;
+        }
+        #m4btn{
+            width: 80%;
+        }
+        .middle4{       
+            padding: 10em 0em;
+        }
+      
+
+    }
